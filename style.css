@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* custom font style*/
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+
+/****** shared item******/
+
+.btn-primary{
+    background-color:rgba(221, 0, 0, 1);
+    width: 187px;
+    height: 56px;
+    padding: 15px 16px;
+    border-radius: 5px;
+    color:rgba(255, 255, 255, 1) ;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* hero section start */
+.hero-container{
+    max-width:1321px;
+    height: 646px;
+    /* border: 2px solid red; */
+    margin:0 auto;
+    margin-top: 50px;
+    background-color: rgba(22, 22, 22, 1);
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0px 15px 0px 35px;
+
+}
+
+.hero-section-text{
+    max-width: 531px;
+    height: 424px;
+    /* border: 4px solid green; */
+}
+
+.hero-title{
+    max-width: 531px;
+    font-size:4.37rem;
+    font-weight:600;
+    line-height: 80px;
+    color: rgba(255, 255, 255, 1);
+
+
+}
+
+.hero-sub-title{
+    font-size: 1rem;
+    color:rgba(255, 255, 255, 1);
+    line-height: 26px;
+    max-width: 506px;
+    margin-top: 10px;
+
+}
+
+.btn-1{
+    margin-top: 15px;
+}
+
+/* hero second image part */
+
+.hero-image{
+    height: 581px;
+    max-width: 613px;
+    display: block;
+    margin-top: 63px;
+}
+
+
+
+
+
+
+
+/********@media section for small device display view********/
+
+@media screen and (max-width:576px) {
+    
+    .hero-container{
+        flex-direction: column;
+        height: 840px;
+        padding:1px;
+        text-align: center;
+        border-radius:10px;
+    }
+
+
+    .hero-image{
+        width: 333px;
+        height: 305px;
+    }
+
+    .hero-title{
+        font-size: 3.90rem;
+    }
+
+}
+
+
+
+
+
+/********@media section for large device display view********/
+
+@media screen and (min-width:576px) and (max-width:992px) {
+    
+     .hero-container{
+        width:834px;
+        height: 404px;
+        align-items: center;
+        
+     }
+
+     .hero-section-text{
+        width: 396px;
+        margin-top: 50px;
+     }
+
+     .hero-image{
+        max-width:444px;
+        height: 340px;
+
+     }
+
+.hero-title{
+    font-size: 2.5rem;
+    line-height: 50px;
+}
+
+}
