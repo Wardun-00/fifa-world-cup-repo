@@ -124,7 +124,34 @@ a:hover{
     max-width: 613px;
     display: block;
     margin-top: 63px;
+
+    animation-name:hero-image;
+    animation-duration:3s;
+    animation-timing-function:ease-in;
+    animation-iteration-count:1;
+    
 }
+
+@keyframes hero-image {
+    0%{
+        opacity: 0;
+        transform:translateY(-920px);
+         filter: drop-shadow(5px 5px 10px rgb(255, 0, 0));
+    }
+
+    50%{
+        /* transform: rotate(360deg); */
+         filter: drop-shadow(5px 5px 10px red);
+        animation-iteration-count: infinite;
+    }
+
+    100%{
+        
+        transform: scale(1.3);
+        
+    }
+}
+
 
 /* main section start */
 
